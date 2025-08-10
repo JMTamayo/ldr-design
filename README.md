@@ -1,6 +1,6 @@
 # LDR Voltage Divider Design
 
-This repository contains the design and analysis of a voltage divider circuit using a Light Dependent Resistor (LDR) GL5539. The project aims to characterize the LDR behavior and design an appropriate voltage divider for use with a 3.3V microcontroller (ESP32).
+This repository contains the design and analysis of a voltage divider circuit using a Light Dependent Resistor (LDR) GL5539. The project aims to characterize the LDR behavior and design an appropriate voltage divider for use with a 5.0V microcontroller (Arduino UNO R3).
 
 ## Project Overview
 
@@ -13,9 +13,9 @@ The project includes:
 ## Key Components
 
 - **Photoresistor**: GL5539 LDR
-- **Circuit Design**: Voltage divider with 5kΩ fixed resistor
-- **Operating Voltage**: 3.3V (ESP32 compatible)
-- **Reference Point**: 1.7V output at 350 lux
+- **Circuit Design**: Voltage divider with 10kΩ fixed resistor
+- **Operating Voltage**: 5.0V (Arduino UNO R3 compatible)
+- **Reference Point**: 3.77V output at 350 lux
 
 ## Repository Structure
 
@@ -37,8 +37,8 @@ From the analysis:
   - Gamma coefficient: -0.641
   - R₀ coefficient: ~200.5 kΩ
 - Voltage divider design:
-  - Fixed resistor: 5 kΩ
-  - Reference point: 1.7V at 350 lux
+  - Fixed resistor: 10 kΩ
+  - Reference point: 3.77V at 350 lux
   - Operating range: Optimized for 100-600 lux
 
 ## Getting Started
@@ -87,4 +87,4 @@ The analysis provides:
 - Current consumption analysis
 - Mathematical model for predicting LDR behavior
 
-The voltage divider design achieves a linear response in the target illuminance range (100-600 lux) and provides appropriate voltage levels for ADC reading with a 3.3V microcontroller.
+The voltage divider design achieves a useful response in the target illuminance range (100-600 lux) and provides appropriate voltage levels for ADC reading with a 5.0V microcontroller.
